@@ -7,7 +7,7 @@ Funcion que calcula la cantidad a pagar por concepto de estacionamiento
     de 6 a 10 horas, la hora cuesta $9
     por mas de 10 horas el costo es de $7
 */
-float pago_estacionamiento(int horas)
+int pago_estacionamiento(int horas)
 {
 	int cant(0);
 	if (horas>=0 && horas<=5)
@@ -24,11 +24,9 @@ void casos_de_prueba(){
 
     cout << "TEST CASES" << endl;
     // Agrega tus casos de prueba
-
-
-
-    cout << endl;
-
+    cout << "Prueba: 9 horas. Esperado: 81. Resultado: " << pago_estacionamiento(9) << endl;
+    cout << "Prueba: 6 horas. Esperado: 54. Resultado: " << pago_estacionamiento(6) << endl;
+    cout << "Prueba: 2 horas. Esperado: 20. Resultado: " << pago_estacionamiento(2) << endl;
 }
 
 int main()
